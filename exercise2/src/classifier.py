@@ -36,8 +36,8 @@ import os
 
 # Class variables
 PRETRAIN_MODEL = "activebus/BERT_Review"
-BATCH_SIZE = 10
-EPOCHS = 10
+BATCH_SIZE = 25
+EPOCHS = 1
 MAX_LEN = 164
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -90,7 +90,7 @@ class Classifier:
             )
 
             # Validation
-            val_acc, val_loss = eval_model(
+            val_acc, val_loss = eval_epoch(
                 self.model,
                 val_data_loader,
                 loss_fn, 
@@ -114,15 +114,15 @@ class Classifier:
         self.model.eval()
     
         # loading the data and preprocessing on the dataframe
-        df = read_data(trainfile)
+        df = read_data(datafile)
         df = prepare_dataframe(df)
         
         # transform df in the adequate Dataset, to be fed to Bert
         dataset = MyDataset(
                 reviews=df.X.to_numpy(),
                 targets=df.y_true.to_numpy(),
-                tokenizer=tokenizer,
-                max_len=164
+                tokenizer=self.tokenizer,
+                max_len=MAX_LEN
                     )
 
         predictions = []       # List where we store Bert's prediction
@@ -134,7 +134,7 @@ class Classifier:
                 attention_mask = d["attention_mask"][None, :].to(device)
                 targets = d["targets"].to(device)
             
-                outputs = model(
+                outputs = self.model(
                 input_ids=input_ids,
                 attention_mask=attention_mask
                 )
@@ -142,11 +142,14 @@ class Classifier:
 
                 predictions.append(preds)
                 #real_values.append(targets)
-            
-            predictions = torch.stack(predictions).cpu()
-            #real_values = torch.stack(real_values).cpu()
-    
-        return list(np.array(predictions))
+
+        predictions = torch.tensor(predictions).numpy()
+
+        # converting the digits back into the sentiments categories
+        sentiments_dict = {0:"positive", 1:"negative", 2:"neutral"}
+        predictions_sentiments = [sentiments_dict[i] for i in predictions]
+
+        return predictions_sentiments
 
 
 
