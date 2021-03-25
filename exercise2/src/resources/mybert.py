@@ -1,6 +1,9 @@
 
 from transformers import AutoTokenizer, AutoModel
 
+import torch.nn as nn
+#import torch.nn.functional as F
+
 
 class MyBert(nn.Module):
     """Full model"""
@@ -10,7 +13,7 @@ class MyBert(nn.Module):
         self.dropout = nn.Dropout(p=0.2)
         self.linear = nn.Linear(self.bert.config.hidden_size, n_classes)
 
-    #############################################
+    
     def forward(self, input_ids, attention_mask):
         _,output = self.bert(
         input_ids=input_ids,
@@ -20,4 +23,4 @@ class MyBert(nn.Module):
         x = self.dropout(output)
         x = self.linear(x)
   
-        return F.softmax(x, dim=1)
+        return nn.functional.softmax(x, dim=1)

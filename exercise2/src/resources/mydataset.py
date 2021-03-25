@@ -1,8 +1,9 @@
+import torch
+import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
 
-
-class ReviewDataset(Dataset):
+class MyDataset(Dataset):
 
   def __init__(self, reviews, targets, tokenizer, max_len=164):
     self.reviews = reviews
