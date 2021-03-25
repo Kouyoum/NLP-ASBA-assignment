@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 from tqdm import tqdm
+import numpy as np
 
 # train functions
 
@@ -25,17 +26,12 @@ def train_epoch(
       input_ids = d["input_ids"].to(device)
       attention_mask = d["attention_mask"].to(device)
       targets = d["targets"].to(device)
-      ##
-      print("going alright")
-      ##
-
+      
       outputs = model(
         input_ids=input_ids,
         attention_mask=attention_mask
       )
-      ##
-      print("going alright")
-      ##
+      
       _, preds = torch.max(outputs, dim=1)
       loss = loss_fn(outputs, targets)
 
