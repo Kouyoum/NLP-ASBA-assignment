@@ -1,12 +1,10 @@
 # Introduction to NLP 
-Assignment  2 - Intro to NLP - CentraleSupélec
+# Assignment  2 - Intro to NLP - CentraleSupélec
 
+### Assignment Links
 - Description of the assignment: https://drive.google.com/file/d/1vTmsTm0b0q_6ZBzKPZ8NHlxDS4u3proo
-
 - Data given: https://drive.google.com/file/d/1dfThUf4lCey-yZ1R4yeR8hkXE3nnOEkj
-
 - Group to ask questions: https://groups.google.com/g/centralesupelec_nlp2021
-
 
 ### Name of the students
 - Tom Terrier-Sarfati
@@ -17,10 +15,11 @@ Assignment  2 - Intro to NLP - CentraleSupélec
 - https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-nlp-fine-tuning-bert-for-text-classification/
 - https://huggingface.co/activebus/BERT_Review
 
+We inspired ourselves, and reused some code of "Curiously"'s implementation of BERT for sentiment classification (link above).
+
 ### Summary of final model
-2. A couple of paragraphs describing your final system (type of
-classification model, feature representation, resources etc.)
-We inspired ourselves from 
+
+**Accuracy on the dev dataset**: XX % 
 
 Our final system uses a BERT transformer network from the transformers library, BERT_Review, which is pretrained on a corpus of Amazon and Yelp reviews.
 
@@ -45,7 +44,7 @@ Another thing worth noting in our implementation is the use of weights for each 
 - Classifier: Dropout for regularization, robustness, softmax (output probabilities)
 
 
-**Accuracy on the dev dataset**: XX % 
+
 
 
 ### Additional work (model with parsing)
