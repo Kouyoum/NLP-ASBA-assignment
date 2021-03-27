@@ -14,7 +14,14 @@
 We inspired ourselves, and reused some code of "Curiously"'s implementation of BERT for sentiment classification (link above).
 
 ### Running the code
+After creating a virtual environment, with virtualenv, and Python 3.7, we install the requirements:
 ```bash
+pip install -r REQUIREMENTS.txt
+```
+and can then run 
+
+```bash
+
 cd src/
 
 Python tester.py
