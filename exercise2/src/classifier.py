@@ -1,9 +1,16 @@
 
 # Our modules
+<<<<<<< HEAD
 from for_classifier.mybert         import MyBert
 from for_classifier.mydataset      import MyDataset
 from for_classifier.preprocessing  import *
 from for_classifier.training       import *
+=======
+from resources.mybert         import MyBert
+from resources.mydataset      import MyDataset
+from resources.preprocessing  import *
+from resources.training       import *
+>>>>>>> 0765d4d0a175eb731b822497a76209d00834d1f1
 
 # transformers
 import transformers
@@ -26,15 +33,31 @@ import numpy as np
 import os
 
 
+<<<<<<< HEAD
 
 # System variables
+=======
+# # weights
+# weights = torch.tensor(traindata['sentiment'].value_counts())
+# weights = weights / weights.sum()
+# print(weights)
+# weights = 1.0 / weights
+# weights = weights / weights.sum()
+# print(weights)
+
+# Class variables
+>>>>>>> 0765d4d0a175eb731b822497a76209d00834d1f1
 PRETRAIN_MODEL = "activebus/BERT_Review"
 BATCH_SIZE = 25
 EPOCHS = 1
 MAX_LEN = 164
+<<<<<<< HEAD
 NUM_WORKERS = 4 if torch.cuda.is_available() else 0
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+=======
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+>>>>>>> 0765d4d0a175eb731b822497a76209d00834d1f1
 
 
 class Classifier:
@@ -57,10 +80,15 @@ class Classifier:
         # Split Dataset and Dataloader
         df_train, df_val = split_dataframe(df, test_size = 0.1)
         
+<<<<<<< HEAD
         train_data_loader = create_data_loader(df_train, self.tokenizer, BATCH_SIZE, max_len= MAX_LEN,
                                                num_workers=NUM_WORKERS)
         val_data_loader = create_data_loader(df_val, self.tokenizer, BATCH_SIZE, max_len = MAX_LEN,
                                                num_workers = NUM_WORKERS)
+=======
+        train_data_loader = create_data_loader(df_train, self.tokenizer, BATCH_SIZE, max_len= MAX_LEN)
+        val_data_loader = create_data_loader(df_val, self.tokenizer, BATCH_SIZE, max_len = MAX_LEN)
+>>>>>>> 0765d4d0a175eb731b822497a76209d00834d1f1
 
         # hyperparameters
         optimizer = AdamW(self.model.parameters(), lr=2e-5)
@@ -70,6 +98,7 @@ class Classifier:
         num_warmup_steps=0,
         num_training_steps=total_steps
         )
+<<<<<<< HEAD
         
         # weights to rebalance
         weights = torch.tensor(traindata['sentiment'].value_counts())
@@ -79,6 +108,10 @@ class Classifier:
         
         # loss
         loss_fn = nn.CrossEntropyLoss(weight = weights).to(device)
+=======
+
+        loss_fn = nn.CrossEntropyLoss().to(device)
+>>>>>>> 0765d4d0a175eb731b822497a76209d00834d1f1
 
         for epoch in tqdm(range(EPOCHS)):
 
