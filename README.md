@@ -13,6 +13,13 @@
 
 We inspired ourselves, and reused some code of "Curiously"'s implementation of BERT for sentiment classification (link above).
 
+### Running the code
+```bash
+cd src/
+
+Python tester.py
+```
+
 ### Summary of final model
 
 Our final system uses a BERT transformer network from the transformers library, BERT_Review, which is pretrained on a corpus of Amazon and Yelp reviews.
