@@ -1,0 +1,8 @@
+nlp2_env/
+
+.vscode/
+
+exercise2/data/traindata_copie.csv
+exercise2/data/devdata_copie.csv
+
+a2_exploration1.ipynb

@@ -65,8 +65,8 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         n_runs = int(sys.argv[1])
     datadir = "../data/"
-    trainfile =  datadir + "traindata.csv"
-    devfile =  datadir + "devdata.csv"
+    trainfile =  datadir + "traindata_copie.csv"
+    devfile =  datadir + "devdata_copie.csv"
     testfile = None
     # testfile = datadir + "testdata.csv"
 

@@ -1,0 +1,50 @@
+positive	LOCATION#GENERAL	neighborhood	54:66	great food, great wine list, great service in a great neighborhood...
+negative	RESTAURANT#GENERAL	place	15:20	I thought this place was totally overrated.
+positive	FOOD#QUALITY	Fish	0:4	Fish is so very fresh.
+negative	SERVICE#GENERAL	manager	19:26	I showed it to the manager, and he smilingly apologized and brought us two free desserts (but did not ask us what we wanted and so brought the last two desserts we would have asked for).
+neutral	DRINKS#QUALITY	margaritas	63:73	The food we ordered was excellent, although I wouldn't say the margaritas were anything to write home about.
+negative	AMBIENCE#GENERAL	decor	29:34	This place has totally weird decor, stairs going up with mirrored walls - I am surprised how no one yet broke their head or fall off the stairs - mirrored walls make you dizzy and delusional...
+negative	RESTAURANT#GENERAL	Haru on Park S	0:14	Haru on Park S is simply disgusting.
+positive	SERVICE#GENERAL	staff	4:9	The staff there is very attentive and down to earth.
+positive	SERVICE#GENERAL	hostess	4:11	The hostess was very pleasant.
+negative	RESTAURANT#MISCELLANEOUS	BFC	3:6	As BFC doesn't take reservations you almost always have to wait by the bar - and be abused by the front of house staff until you are seated, which can be over an hour later!
+positive	SERVICE#GENERAL	service	11:18	Good, fast service.
+negative	FOOD#STYLE_OPTIONS	salt encrusted shrimp appetizer	37:70	"I believe there were 2 shrimp in the ""salt encrusted shrimp"" appetizer. "
+positive	DRINKS#QUALITY	Gigondas	22:30	Great wine selection, Gigondas is worth the price, and the house champagne is a great value.
+positive	FOOD#PRICES	sushi	38:43	This is some really good, inexpensive sushi.
+positive	FOOD#QUALITY	fried dumplings	4:19	The fried dumplings are GREAT!
+positive	DRINKS#STYLE_OPTIONS	wine list	4:13	The wine list is excellent.
+positive	FOOD#QUALITY	food	103:107	Everyone raved about the atmosphere (elegant rooms and absolutely incomparable views) and the fabulous food!
+positive	RESTAURANT#GENERAL	bar	39:42	After really enjoying ourselves at the bar we sat down at a table and had dinner.
+positive	FOOD#QUALITY	food	4:8	The food we ordered was excellent, although I wouldn't say the margaritas were anything to write home about.
+positive	FOOD#QUALITY	thai cuisine	45:57	I would definitely recommend SEA if you like thai cuisine!
+positive	SERVICE#GENERAL	Service	0:7	Service was very prompt but slightly rushed.
+positive	FOOD#QUALITY	seafood	4:11	The seafood is amazing, there's a good wine list, and the ever-changing menu always offers some great surprises.
+positive	FOOD#STYLE_OPTIONS	menu	30:34	With the great variety on the menu , I eat here often and never get bored .
+positive	DRINKS#STYLE_OPTIONS	wine list	4:13	The wine list was extensive - though the staff did not seem knowledgeable about wine pairings.
+positive	FOOD#QUALITY	Pizza	0:5	Pizza here is consistently good.
+negative	FOOD#QUALITY	food	63:67	So what you really end up paying for is the restaurant not the food.
+negative	RESTAURANT#PRICES	restaurant	20:30	I have never left a restaurant feeling as if i was abused, and wasted my hard earned money.
+positive	FOOD#QUALITY	food	4:8	The food was pretty tradional but it was hot and good with large portions.
+positive	LOCATION#GENERAL	block	36:41	Located at the end of a magnificent block.
+positive	RESTAURANT#GENERAL	Planet Thailand	0:15	Planet Thailand has always been a hit with me , I go there usually for the sushi, which is great , the thai food is excellent too .
+positive	SERVICE#GENERAL	service	43:50	never swaying, never a bad meal, never bad service...
+positive	FOOD#QUALITY	gyros	67:72	This small Astoria souvlaki spot makes what many consider the best gyros in New York.
+negative	SERVICE#GENERAL	girl	16:20	"There's another girl who I can't describe, she is about 5'6"" with brown hair, who eavesdrops on your conversation and chimes in - except she only hears the last part of what you said, so her uninvited opinions are often out of context and nothing to do with what you're *really* talking about. "
+positive	AMBIENCE#GENERAL	setting/atmosphere	50:68	Service, however, was excellent...and I liked the setting/atmosphere a lot. 
+positive	FOOD#QUALITY	chocolate bread pudding	70:93	You must have the crabmeat lasagna which is out of this world and the chocolate bread pudding for dessert.
+positive	FOOD#QUALITY	pasta	4:9	The pasta was well cooked, didn't have enough sauce though or flavor.
+positive	FOOD#QUALITY	food	4:8	The food and service were fine, however the maitre-D was incredibly unwelcoming and arrogant.
+positive	FOOD#QUALITY	food	63:67	Although the tables may be closely situated, the candle-light, food-quality and service overcompensate.
+positive	FOOD#QUALITY	food	18:22	good music, great food, speedy service affordable prices.
+positive	FOOD#QUALITY	food	31:35	The signs, the specials menus, food, and even all the waitstaff are ALL TOTALLY Japanese.
+positive	FOOD#QUALITY	scallops	23:31	I really like both the scallops and the mahi mahi (on saffron risotto-yum!).
+positive	RESTAURANT#GENERAL	restaurant	14:24	This is a fun restaurant to go to.
+negative	FOOD#QUALITY	food	4:8	The food arrived 20 minutes after I called, cold and soggy.
+positive	FOOD#STYLE_OPTIONS	special roll	4:16	One special roll and one regular roll is enough to fill you up, but save room for dessert!
+negative	SERVICE#GENERAL	Delivery guy	0:12	Delivery guy sometimes get upset if you don't tip more than 10%.
+positive	FOOD#QUALITY	duck confit	4:15	The duck confit is always amazing and the foie gras terrine with figs was out of this world.
+positive	DRINKS#QUALITY	glass of wine	25:38	As always we had a great glass of wine while we waited.
+negative	AMBIENCE#GENERAL	place	11:16	Well, this place is so Ghetto its not even funny.
+positive	DRINKS#STYLE_OPTIONS	selection of wines	131:149	The food is amazing... especially if you get the Chef's tasting menu and your favourite bottle (or two!) of wine from an extensive selection of wines.
+positive	AMBIENCE#GENERAL	garden	39:45	Even if the food wasn't this good, the garden is a great place to sit outside and relax.
