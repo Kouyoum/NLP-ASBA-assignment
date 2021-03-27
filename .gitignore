@@ -5,4 +5,8 @@ nlp2_env/
 exercise2/data/traindata_copie.csv
 exercise2/data/devdata_copie.csv
 
+
+exercise2/src/__pycache__/
+exercise2/src/for_classifier/__pycache__/
+
 a2_exploration1.ipynb
