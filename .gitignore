@@ -2,6 +2,8 @@ nlp2_env/
 
 .vscode/
 .DS_Store
+**/.DS_Store
+
 
 data/traindata_copie.csv
 data/devdata_copie.csv
