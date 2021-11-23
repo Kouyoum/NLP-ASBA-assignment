@@ -11,7 +11,7 @@
 - https://www.analyticsvidhya.com/blog/2020/07/transfer-learning-for-nlp-fine-tuning-bert-for-text-classification/
 - https://huggingface.co/activebus/BERT_Review
 
-We inspired ourselves, and reused some code of "Curiously"'s implementation of BERT for sentiment classification (link above).
+For the implementation of BERT, We inspired ourselves, and reused some code of "Curiously"'s implementation of BERT for sentiment classification (link above).
 
 ### Running the code
 After creating a virtual environment, with virtualenv, and Python 3.7, we install the requirements:
